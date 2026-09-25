@@ -1,241 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>...</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background: #080808;
-            color: #cfcfcf;
-            font-family: monospace;
-            min-height: 100vh;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 650px;
-            text-align: center;
-        }
-
-        .message {
-            font-size: 17px;
-            line-height: 1.8;
-            letter-spacing: 1px;
-            margin-bottom: 55px;
-        }
-
-        .clock {
-            font-size: 30px;
-            letter-spacing: 4px;
-            line-height: 1.7;
-        }
-
-        .digit {
-            margin: 32px 0;
-        }
-
-        .time {
-            margin: 3px 0;
-        }
-
-        .separator {
-            font-size: 28px;
-            color: #555;
-            margin: 20px 0;
-        }
-
-        .footer {
-            margin-top: 65px;
-            font-size: 10px;
-            color: #333;
-            letter-spacing: 2px;
-        }
-
-        @media (max-width: 500px) {
-            .clock {
-                font-size: 24px;
-                letter-spacing: 3px;
-            }
-
-            .message {
-                font-size: 15px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="message">
-        You guys are smart. I see.<br>
-        You may move forward.
-    </div>
-
-    <div class="clock">
-
-        <!-- 2 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 1 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <div class="separator">.</div>
-
-        <!-- 6 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-        </div>
-
-        <!-- 8 -->
-        <div class="digit">
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-        </div>
-
-        <!-- 3 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 8 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 5 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 6 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 9 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-        </div>
-
-        <div class="separator">,</div>
-
-        <!-- 6 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 9 -->
-        <div class="digit">
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <div class="separator">.</div>
-
-        <!-- 7 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 4 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-        </div>
-
-        <!-- 0 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-        </div>
-
-        <!-- 2 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 9 -->
-        <div class="digit">
-            <div class="time">10:32</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-        <!-- 2 -->
-        <div class="digit">
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:31</div>
-            <div class="time">10:32</div>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        ...
-    </div>
-
+<!-- 2 = 0010 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
 </div>
 
-</body>
-</html>
+<!-- 1 = 0001 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+</div>
+
+<div class="separator">.</div>
+
+<!-- 6 = 0110 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+</div>
+
+<!-- 8 = 1000 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+</div>
+
+<!-- 3 = 0011 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+</div>
+
+<!-- 8 = 1000 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+</div>
+
+<!-- 5 = 0101 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+</div>
+
+<!-- 6 = 0110 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+</div>
+
+<div class="separator">,</div>
+
+<!-- 6 = 0110 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+</div>
+
+<!-- 9 = 1001 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+</div>
+
+<div class="separator">.</div>
+
+<!-- 7 = 0111 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:32</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+</div>
+
+<!-- 4 = 0100 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+</div>
+
+<!-- 0 = 0000 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+</div>
+
+<!-- 2 = 0010 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+</div>
+
+<!-- 9 = 1001 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+</div>
+
+<!-- 2 = 0010 -->
+<div class="digit">
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+    <div class="time">10:31</div><div class="time">10:32</div>
+    <div class="time">10:31</div><div class="time">10:31</div>
+</div>
