@@ -1,133 +1,200 @@
-<!-- 2 = 0010 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
 
-<!-- 1 = 0001 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registry 02</title>
 
-<div class="separator">.</div>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<!-- 6 = 0110 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-</div>
+body {
+  margin: 0;
+  padding: 30px 16px;
+  background: #0b0b0b;
+  color: #d5d5d5;
+  font-family: "Courier New", monospace;
+}
 
-<!-- 8 = 1000 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
+main {
+  max-width: 700px;
+  margin: auto;
+}
 
-<!-- 3 = 0011 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-</div>
+header {
+  border-bottom: 1px solid #444;
+  padding-bottom: 18px;
+  margin-bottom: 26px;
+}
 
-<!-- 8 = 1000 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
+.eyebrow {
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
 
-<!-- 5 = 0101 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-</div>
+h1 {
+  color: #eee;
+  font-size: 26px;
+  font-weight: normal;
+  margin: 12px 0;
+}
 
-<!-- 6 = 0110 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-</div>
+.subtitle {
+  color: #777;
+  font-size: 12px;
+}
 
-<div class="separator">,</div>
+section {
+  border: 1px solid #333;
+  padding: 18px;
+  margin-bottom: 20px;
+  background: #101010;
+}
 
-<!-- 6 = 0110 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-</div>
+h2 {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin: 0 0 18px;
+}
 
-<!-- 9 = 1001 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-</div>
+.entry {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid #222;
+  font-size: 14px;
+}
 
-<div class="separator">.</div>
+.entry:last-child {
+  border-bottom: none;
+}
 
-<!-- 7 = 0111 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:32</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-</div>
+.id {
+  color: #777;
+}
 
-<!-- 4 = 0100 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
+.value {
+  color: #ddd;
+}
 
-<!-- 0 = 0000 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
+footer {
+  border-top: 1px solid #333;
+  margin-top: 28px;
+  padding-top: 18px;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.9;
+}
 
-<!-- 2 = 0010 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
+@media (max-width: 420px) {
+  body {
+    padding: 22px 12px;
+  }
 
-<!-- 9 = 1001 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-</div>
+  section {
+    padding: 14px;
+  }
+}
+</style>
+</head>
 
-<!-- 2 = 0010 -->
-<div class="digit">
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-    <div class="time">10:31</div><div class="time">10:32</div>
-    <div class="time">10:31</div><div class="time">10:31</div>
-</div>
+<body>
+<main>
+
+<header>
+  <div class="eyebrow">RECOVERED DOCUMENT / 02</div>
+  <h1>Registry of Fragments</h1>
+  <div class="subtitle">Record status: INCOMPLETE</div>
+</header>
+
+<section>
+  <h2>I. SYNCHRONISATION LOG</h2>
+
+  <div class="entry">
+    <span class="id">A</span>
+    <span class="value">08:14:01</span>
+  </div>
+  <div class="entry">
+    <span class="id">B</span>
+    <span class="value">08:19:02</span>
+  </div>
+  <div class="entry">
+    <span class="id">C</span>
+    <span class="value">08:22:03</span>
+  </div>
+  <div class="entry">
+    <span class="id">D</span>
+    <span class="value">08:25:04</span>
+  </div>
+  <div class="entry">
+    <span class="id">E</span>
+    <span class="value">08:31:05</span>
+  </div>
+</section>
+
+<section>
+  <h2>II. INDEX REGISTRY</h2>
+
+  <div class="entry">
+    <span class="id">A</span>
+    <span class="value">01</span>
+  </div>
+  <div class="entry">
+    <span class="id">B</span>
+    <span class="value">02</span>
+  </div>
+  <div class="entry">
+    <span class="id">C</span>
+    <span class="value">02</span>
+  </div>
+  <div class="entry">
+    <span class="id">D</span>
+    <span class="value">01</span>
+  </div>
+  <div class="entry">
+    <span class="id">E</span>
+    <span class="value">01</span>
+  </div>
+</section>
+
+<section>
+  <h2>III. RECOVERY FRAGMENTS</h2>
+
+  <div class="entry">
+    <span class="id">01</span>
+    <span class="value">5IGNAL</span>
+  </div>
+  <div class="entry">
+    <span class="id">02</span>
+    <span class="value">STONE</span>
+  </div>
+  <div class="entry">
+    <span class="id">03</span>
+    <span class="value">NIGHT</span>
+  </div>
+  <div class="entry">
+    <span class="id">04</span>
+    <span class="value">HOLLOW</span>
+  </div>
+  <div class="entry">
+    <span class="id">05</span>
+    <span class="value">SHARD</span>
+  </div>
+</section>
+
+<footer>
+  The clock records when.<br>
+  The registry records where.<br>
+  The fragments remain in their original order.
+</footer>
+
+</main>
+</body>
+</html>
