@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b0e">
+  <title>The Last Transmission</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      background: #090b0e;
+      color: #e6edf3;
+      font-family: "Courier New", monospace;
+    }
+
+    .screen {
+      width: 100%;
+      max-width: 650px;
+      padding: clamp(28px, 7vw, 55px);
+      background: #101419;
+      border: 1px solid #28313a;
+      box-shadow: 0 0 70px #17212a40;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(30px, 7vw, 44px);
+      letter-spacing: -2px;
+      font-weight: normal;
+    }
+
+    .intro {
+      color: #a5b0ba;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .message {
+      margin: 42px 0;
+      padding: 30px 10px;
+      text-align: center;
+      border-top: 1px solid #28313a;
+      border-bottom: 1px solid #28313a;
+    }
+
+    .cipher {
+      font-size: clamp(27px, 7vw, 40px);
+      letter-spacing: 5px;
+      overflow-wrap: anywhere;
+      text-shadow: 0 0 18px #c7d8e522;
+    }
+
+    .clue {
+      margin-top: 15px;
+      color: #bac5ce;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    @media (max-width: 420px) {
+      .cipher {
+        letter-spacing: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="screen">
+    <h1>The Last Transmission</h1>
+
+    <p class="intro">
+      The message survived.<br>
+      The key did not.
+    </p>
+
+    <section class="message">
+      <div class="cipher">QLFH, VROYHG</div>
+    </section>
+
+    <div class="clue">
+      A Roman left this behind.<br>
+      Three steps separate the message<br>
+      from its meaning.
+    </div>
+  </main>
+</body>
+</html>
